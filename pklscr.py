@@ -10,7 +10,7 @@ import pickle
 """
 with open('prediction_model.pkl', 'rb') as file:
     Pickled_lm =pickle.load(file)
-    age=st.slider("Age Selector",min_value=1,max_value=110, value=20)
+    age = st.number_input("Enter your Age", value=20, min_value=1, max_value=150, step=1)
     k1=st.button("MALE");
     k0=st.button("FEMALE")
     if(k1==True):
@@ -25,5 +25,5 @@ with open('prediction_model.pkl', 'rb') as file:
     x_low=Pickled_lm.predict([[1,150]])[0][0] #Adults have lower probs
     final=(preds-x_low)/(x_high-x_low) #Normalizing
     if(k1==True or k0==True):
-        st.subheader("Predictions for \n Age: {age} and Gender: {gender}".format(age=age,gender=k))
-        st.header(round(final*100,2))
+        st.subheader("The chances of survival for:\n Age: {age} and Gender: {gender} is".format(age=age,gender=k))
+        st.header("{ch} %".format(ch=round(final*100,2)))
