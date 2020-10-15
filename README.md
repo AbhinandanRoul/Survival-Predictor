@@ -8,5 +8,5 @@ KEEP CALM and FIGHT COVID-19
 ![image](https://github.com/AbhinandanRoul/Survival-Predictor/blob/master/Screenshot.png)
 
 Made with <br> 
-<img src="https://avatars1.githubusercontent.com/u/45109972?s=200&v=4" width="100">
+<img src="https://avatars1.githubusercontent.com/u/45109972?s=200&v=4" width="100"> <br>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" width="100">
