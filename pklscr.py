@@ -8,7 +8,7 @@ import pickle
 # COVID-19 Survival Predictor :mask:
 ![keep calm](https://mir-s3-cdn-cf.behance.net/project_modules/disp/b8d3cd96548519.5eb10b3277638.gif)
 """
-with open('C:\\Users\\myp\\PycharmProjects\\StreamLit\\prediction_model.pkl', 'rb') as file:
+with open('prediction_model.pkl', 'rb') as file:
     Pickled_lm =pickle.load(file)
     age=st.slider("Age Selector",min_value=1,max_value=110, value=20)
     k1=st.button("MALE");
